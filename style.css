@@ -1,0 +1,400 @@
+
+.stg-container-fluid{
+  padding-right: calc(1.5rem*0.5);
+  padding-left: calc(1.5rem*0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+.stg-container{
+  max-width:auto;
+  margin: 1.5rem;
+  background:#000;
+}
+.stg-row{
+  flex-shrink: 0;
+width: 100%;
+max-width: 100%;
+padding-right: calc(1.5rem * 0.5);
+padding-left: calc(1.5rem * 0.5);
+margin-top:0;
+}
+.stg-hover{
+  transition: all 3s 0.5s linear;
+}
+.stg-hover>:hover{
+  background-color: #e1dddd!important;
+  opacity: 1;
+}
+.zi{
+  z-index: 68468484564!important;
+}
+.stg-service{
+  white-space: nowrap;
+}
+
+
+.stg-service ul ul  {
+  display: none;
+   position: fixed;
+   /* la position des sous menu par rapport a leurs menu superieur  */ 
+   }
+.stg-service li:hover ul.s-service, .s-service li:hover ul.ss-service {
+  display: block!important;
+  z-index: 44485498;
+}
+
+.stg-offset{
+  margin-left:11.1% ;
+}
+
+.sform-control{
+  flex:0 0 auto;
+  width:auto;
+}
+
+@media (min-width: 768px) {
+  .invisible-768 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .visible-768 {
+    display: none;
+  }
+}
+
+.stg-btn-outline-success {
+  --bs-btn-color: #0000ff;
+  --bs-btn-border-color: #0000ff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #00ff00;
+  --bs-btn-hover-border-color: #00ff00;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #198754;
+  --bs-btn-active-border-color: #198754;
+  --bs-btn-active-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #198754;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #198754;
+  --bs-gradient: none;
+}
+
+.menu{
+  position: relative;
+  float: inline-end;
+
+  
+}
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  
+}
+
+.menu-mobile{
+ 
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0;
+left: -3rem;
+
+transition: 0.5s;
+}
+
+
+.container-bar {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+a{
+  text-decoration: none;
+  color:#0000ff;
+}
+
+.socialnav{
+  position: fixed;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  margin-top: auto!important;
+  margin-bottom: auto!important;
+}
+.socialnav a {
+  position: relative; /* Position them relative to the browser window */
+  left: -3rem; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: max-content; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: rgb(255, 255, 255); /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+#facbg{
+  background-color: #3b5998;
+}
+#inst{
+  
+  background: linear-gradient(45deg, #405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+}
+#twt{
+  background-color:#1D9BF0;
+}
+#in{
+  background-color:#0a66c2;
+}
+.socialnav a:hover{
+  left: 0;
+} 
+
+.card-shadow{
+  box-shadow:0rem 0.5rem 0.8rem #a8a8a8;
+}
+
+
+
+.counter{
+  color: #eb3b5a;
+  font-family: 'Muli', sans-serif;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 100%;
+  padding: 77px 32px 40px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.counter:before,
+.counter:after{
+  content: "";
+  background: #fff;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  box-shadow: -5px 5px 5px rgba(0,0,0,0.3);
+  transform: translateX(-50%)translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.counter:after{
+  background: linear-gradient(45deg,#B81242 49%, #D74A75 50%);
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+  transform: translate(0);
+  top: 0;
+  left: 0;
+  z-index: -2;
+  clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+}
+.counter .counter-icon{
+  color: #fff;
+  background: linear-gradient(45deg,#B81242 49%, #D74A75 50%);
+  font-size: 33px;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top:  0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.counter .counter-icon i.fa{
+  transform: rotateX(0deg);
+  transition: all 0.3s ease 0s;
+}
+.counter:hover .counter-icon i.fa{ transform: rotateX(360deg); }
+.counter h3{
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 3px;
+}
+.counter .counter-value{
+  font-size: 30px;
+  font-weight: 700;
+}
+.counter.orange{ color: #F38631; }
+.counter.orange:after,
+.counter.orange .counter-icon{
+  background: linear-gradient(45deg,#F38631 49%,#F8A059 50%);
+}
+.counter.green{ color: #88BA1B; }
+.counter.green:after,
+.counter.green .counter-icon{
+  background: linear-gradient(45deg,#88BA1B 49%,#ACD352 50%);
+}
+.counter.blue{ color: #5DB3E4; }
+.counter.blue:after,
+.counter.blue .counter-icon{
+  background: linear-gradient(45deg,#5DB3E4 49%,#7EBEE1 50%);
+}
+
+.stg-bg-blue{
+  background: linear-gradient(60deg,#1D9BF0 ,#0000ff);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+.snip1445 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+}
+.snip1445 *,
+.snip1445 *:before,
+.snip1445 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+.snip1445 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+.snip1445 figcaption {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  padding: 5px 10px 10px;
+}
+.snip1445 figcaption:before,
+.snip1445 figcaption:after {
+  height: 2px;
+  width: 400px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+.snip1445 figcaption:before {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.snip1445 figcaption:after {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.snip1445 figcaption div:before,
+.snip1445 figcaption div:after {
+  width: 2px;
+  height: 300px;
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+.snip1445 figcaption div:before {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.snip1445 figcaption div:after {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.snip1445 h2,
+.snip1445 h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+.snip1445 h2 {
+  font-weight: 400;
+}
+.snip1445 h4 {
+  display: block;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  color: #000000;
+}
+.snip1445 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.snip1445:hover img,
+.snip1445.h-hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+.snip1445:hover figcaption:before,
+.snip1445.h-hover figcaption:before,
+.snip1445:hover figcaption:after,
+.snip1445.h-hover figcaption:after,
+.snip1445:hover figcaption div:before,
+.snip1445.h-hover figcaption div:before,
+.snip1445:hover figcaption div:after,
+.snip1445.h-hover figcaption div:after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.snip1445:hover figcaption:before,
+.snip1445.h-hover figcaption:before,
+.snip1445:hover figcaption:after,
+.snip1445.h-hover figcaption:after {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+@media screen and (max-width:990px){
+  .counter{ margin-bottom: 40px; }
+}
+
+@media (min-width:668px)and (max-width: 768px) {
+  .{
+    
+  }
+}
+
