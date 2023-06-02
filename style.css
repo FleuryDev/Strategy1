@@ -158,6 +158,16 @@ a{
   color: rgb(255, 255, 255); /* White text color */
   border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
 }
+@media (max-width: 768px) {
+  .socialnav a {
+  position: relative; /* Position them relative to the browser window */
+  left: 0;
+  }
+  
+  .socialnav a:hover{
+  left: 0.8rem;
+  } }
+  
 #facbg{
   background-color: #3b5998;
 }
