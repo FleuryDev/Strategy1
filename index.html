@@ -148,10 +148,10 @@
           
           <div class=" mt-5 container zi bg-gray-100">
             <div id="social-sid" class="socialnav my-auto">
-              <a href="#" id="facbg">Facebook <i class="fa-brands fa-facebook-f fa-beat"></i> </a>
-              <a href="#" id="in">Linkedin <i class="fa-brands fa-linkedin-in fa-beat"></i></a>
-              <a href="#" id="inst">Instagram <i class="fa-brands fa-square-instagram fa-beat"></i></a>
-              <a href="#" id="twt">Twitter <i class="fa-brands fa-twitter fa-beat"></i></a>
+              <a href="#" id="facbg"><span class='invisible-768'>Facebook </span><i class="fa-brands fa-facebook-f fa-beat"></i> </a>
+              <a href="#" id="in"><span class='invisible-768'>Linkedin</span> <i class="fa-brands fa-linkedin-in fa-beat"></i></a>
+              <a href="#" id="inst"><span class='invisible-768'>Instagram </span><i class="fa-brands fa-square-instagram fa-beat"></i></a>
+                  <a href="#" id="twt"><span class='invisible-768'>Twitter</span> <i class="fa-brands fa-twitter fa-beat"></i></a>
             </div>
           </div>
           
@@ -169,11 +169,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-8 vh-10">
+              <div class="col-sm-12 container-sm-fluid col-md-8 vh-10">
                 <!-- required bootstrap js -->
                 <!-- add 'carousel-slider' snippet in css -->
                 <div class="row">
-                  <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div id="carouselExample" class="carousel slide carousel-fade container-fluid" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -219,14 +219,14 @@
             </div>
 
             <div class="row">
-              <h2>DESCRIPTION</h2>
-              <div class="col-9 offset-2 mb-3">
+              <h2 class="mt-3 p-2">DESCRIPTION</h2>
+              <div class="col-sm-11 offset-sm-0 col-9 offset-2  mb-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis incidunt, illo aspernatur aperiam sequi voluptate ipsam nihil unde sint nisi eaque nostrum repellendus vel odit? Laborum dolores illum pariatur nesciunt assumenda in officiis architecto nisi ducimus quisquam dolor, esse deserunt praesentium quod est repudiandae voluptas. Commodi aliquam a enim totam odio ipsam. Suscipit aliquam aspernatur praesentium obcaecati at enim quo molestias sunt laudantium amet iure optio voluptatibus voluptatum nobis expedita eaque nostrum doloremque, vitae natus, repellat architecto, veniam culpa officiis delectus. Aliquid impedit totam cumque, perferendis libero ipsam, assumenda officiis ea fugit corrupti deserunt cum distinctio provident, natus corporis veniam.
               </div>
             </div>
 
             <div class="row mt-3">
-              <h2 class="col-5 mx-auto mt-2">NOTRE VISION</h2>
+              <h2 class="col-sm-auto col-5 mx-auto mt-2">NOTRE VISION</h2>
               <div class="col-sm-11 col-md-10 mx-auto p-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis incidunt, illo aspernatur aperiam sequi voluptate ipsam nihil unde sint nisi eaque nostrum repellendus vel odit? Laborum dolores illum pariatur nesciunt assumenda in officiis architecto nisi ducimus quisquam dolor, esse deserunt praesentium quod est repudiandae voluptas. Commodi aliquam a enim totam odio ipsam. Suscipit aliquam aspernatur praesentium obcaecati at enim quo molestias sunt laudantium amet iure optio voluptatibus voluptatum nobis expedita eaque nostrum doloremque, vitae natus, repellat architecto, veniam culpa officiis delectus. Aliquid impedit totam cumque, perferendis libero ipsam, assumenda officiis ea fugit corrupti deserunt cum distinctio provident, natus corporis veniam.
               </div>
@@ -240,14 +240,14 @@
 
             <div class="row mt-3" >
               <div class="container mx-auto">
-                <h2 class="text-center">
+                <h2 class="text-center col-auto fs-sm-auto">
                   PROJETS ET R&Eacute;ALISATIONS
                 </h2>
                 <div class="row">        
                   <div class="container">
                       <div class="row p-3">
                           <div class=" col-sm-5 col-md-3 mx-auto">
-                              <div class="counter">
+                              <div class="col-sm-10 counter">
                                   <div class="counter-icon">
                                       <i class="fa fa-globe"></i>
                                   </div>
@@ -526,7 +526,7 @@
 
       }
       function openNav() {
-  document.getElementById("menumobile").style.width = "75%";
+  document.getElementById("menumobile").style.width = "90%";
   //document.getElementById("main").style.width = "55%";
 
   //document.getElementById("main").style.marginLeft = "45%";
