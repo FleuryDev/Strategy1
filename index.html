@@ -120,7 +120,7 @@
                 </div>
 
             </div>
-            <div id="menumobile" class="container col-10  vh-100 invisible-768 bg-gradient menu-mobile col-sm-10 bg-dark">
+            <div id="menumobile" class="container vh-100 invisible-768 bg-gradient menu-mobile   bg-dark">
               <div class="row">
                 <div class="col-auto mx-auto">
                   <div class="row"><img src="img/blue.png" alt="" class="img-fluid  offset-4 w-75 p-1 pb-0" ></div>
@@ -132,15 +132,49 @@
               </div>
               <div class="row">
                 
+                  <div class="accordion container" id="accordionExample">
+                    <div class="accordion-item  row">
+                      <h2 class="accordion-header" id="headingOne">
+                        <div class="col-11 mx-auto"><a  href="">Création</a></div>
+                        <button class="accordion-button col-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                         #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item row">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item row">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
  
               </div>
-              <!-- <div class="row">             
-                <form class="form-inline container-fluid mx-auto">
-                 
-                    <input class="form-control sform-control col-11 mx-auto" type="search" placeholder="Search" aria-label="Search">
              
-                </form>
-              </div> -->
 
             </div>
         </div>
@@ -517,9 +551,9 @@
 
             <!-- FOOTER -->
             <div class="row">
-              <footer class="kilimanjaro_area">
+              <div class="container-fluid m-0 ">
                 <!-- Top Footer Area Start -->
-                <div class="foo_top_header_one section_padding_100_70">
+                <div class=" row foo_top_header_one section_padding_100_70">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-3">
@@ -642,16 +676,16 @@
                     </div>
                 </div>
                 <!-- Footer Bottom Area Start -->
-                <div class=" kilimanjaro_bottom_header_one section_padding_50 text-center">
-                    <div class="container">
+                <div class=" kilimanjaro_bottom_header_one section_padding_50 row text-center">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col-12 p-2">
-                                <p>© GroupInnov - Strategyfine 2023 All Rights Reserved <a href="#"><i class="fa fa-code"></i></a></p>
+                                <p >© GroupInnov - Strategyfine 2023 All Rights Reserved <a href="#"><i class="fa fa-code"></i></a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
+              </div>
             </div>
           </div>
         </div>
@@ -672,7 +706,7 @@
 
       }
       function openNav() {
-  document.getElementById("menumobile").style.width = "90%";
+  document.getElementById("menumobile").style.marginLeft = "0";
   //document.getElementById("main").style.width = "55%";
 
   //document.getElementById("main").style.marginLeft = "45%";
@@ -680,7 +714,7 @@
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
-  document.getElementById("menumobile").style.width = "0";
+  document.getElementById("menumobile").style.marginLeft = "-100rem";
   //document.getElementById("main").style.width = "100%";
 
   //document.getElementById("main").style.marginLeft = "0";
